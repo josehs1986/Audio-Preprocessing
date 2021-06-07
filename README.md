@@ -25,3 +25,12 @@ To circumvent this situation there have been used two different approaches:
 
 
 Here, we propose a method based on calibrating one of the several parameters of the Mel-spectrogram function, which allows controlling the number of columns of the output matrix independent of the length of the input audio.   
+
+audio length  0.95 (s)      Spectogram shape  (50, 51)
+
+ audio length  1.9 (s)      Spectogram shape  (50, 51)
+
+ audio length  2.86 (s)     Spectogram shape  (50, 51)
+
+ audio length  3.81 (s)     Spectogram shape  (50, 51)
+ 
