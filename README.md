@@ -11,6 +11,7 @@ When data is audio, besides the usual problems of filtering noise and interferen
 The problem consists that, while the number of rows is given by the number of frequency channels used for describing the signal, a constant parameter of the method, the number of columns of the calculated spectrogram matrix is linearly proportional to the length of the audio input. For example, see how the nuymber of columns of the output spectogram matrix increases with audio length below.
 
 audio length  2.86 (s)  Spectogram shape  (50, 247)
+
 audio length  3.81 (s)  Spectogram shape  (50, 329)
 
 In this case, the number of frequency channels was 50.
