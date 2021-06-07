@@ -17,6 +17,8 @@ audio length  3.81 (s)  Spectogram shape  (50, 329)
 
 In this case, the number of frequency channels was 50.
 
+This causes difficulties to build pipelines for machine learnign models which are designed for a fixed number of features as input.
+
 To circumvent this situation there have been used two different approaches: 
 (1) summarizing the spectral power over time, calculating the average and higher-order momenta of the data for each frequency channels, which losses the temporal dynamics, or 
 (2) seeking for the shortest audio and then truncating all input signals to that length or creating multiple samples of the shortest audio size from larger inputs.  
