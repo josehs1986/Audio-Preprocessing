@@ -5,6 +5,7 @@ Any machine learning problem consists of three types of tasks:
 (2) data model building  (training machine learning models), and 
 (3) evaluation (measuring the "quality" of the model). 
 
+Here we address a problem of data preprocessing, mnore specifically of feature extraction.
 
 When data is audio, besides the usual problems of filtering noise and interferences of background sounds, there is a recurrent problem with the most frequently used feature source, the Mel-spectrogram (Mel-frequency spectrogram), which shows how the power vs frequency spectrum (obtained with embedded discrete fast Fourier transform)  of the signal changing over time. 
 
