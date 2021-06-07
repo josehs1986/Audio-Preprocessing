@@ -8,7 +8,12 @@ Any machine learning problem consists of three types of tasks:
 
 When data is audio, besides the usual problems of filtering noise and interferences of background sounds, there is a recurrent problem with the most frequently used feature source, the Mel-spectrogram (Mel-frequency spectrogram), which shows how the power vs frequency spectrum (obtained with embedded discrete fast Fourier transform)  of the signal changing over time. 
 
-The problem consists that, while the number of rows is given by the number of frequency channels used for describing the signal, a constant parameter of the method, the number of columns of the calculated spectrogram matrix is linearly proportional to the length of the audio input.
+The problem consists that, while the number of rows is given by the number of frequency channels used for describing the signal, a constant parameter of the method, the number of columns of the calculated spectrogram matrix is linearly proportional to the length of the audio input. For example, see how the nuymber of columns of the output spectogram matrix increases with audio length below.
+
+audio length  2.86 (s)  Spectogram shape  (50, 247)
+audio length  3.81 (s)  Spectogram shape  (50, 329)
+
+In this case, the number of frequency channels was 50.
 
 To circumvent this situation there have been used two different approaches: 
 (1) summarizing the spectral power over time, calculating the average and higher-order momenta of the data for each frequency channels, which losses the temporal dynamics, or 
